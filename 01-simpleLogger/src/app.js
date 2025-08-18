@@ -1,4 +1,4 @@
-import logMessage from './src/logger.js';
+import logMessage from './logger.js';
 
 logMessage('Сервер запущено');
 logMessage('Сервер работает');
