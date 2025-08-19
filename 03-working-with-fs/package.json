@@ -1,0 +1,20 @@
+{
+  "name": "03-working-with-fs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/task1.js && node src/task2.js",
+    "task1": "node src/task1.js",
+    "task2": "node src/task2.js",
+    "dev": "nodemon --watch src src/task1.js & nodemon --watch src src/task2.js"
+  },
+  "keywords": [],
+  "author": "Ukhach Oleksandr",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
