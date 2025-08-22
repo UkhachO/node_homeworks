@@ -1,0 +1,21 @@
+{
+  "name": "04-3rd-part-modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/date-format",
+    "dev": "nodemon src/date-format"
+  },
+  "keywords": [],
+  "author": "Oleksandr Ukhach",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}

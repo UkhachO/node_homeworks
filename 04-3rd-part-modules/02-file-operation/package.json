@@ -1,0 +1,21 @@
+{
+  "name": "02-file-operation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/file-operation",
+    "dev": "nodemon src/file-operation"
+  },
+  "keywords": [],
+  "author": "Ukhach Oleksandr",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  }
+}
