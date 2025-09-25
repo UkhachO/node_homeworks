@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo:7
+    container_name: hw14-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+   
+      MONGO_INITDB_DATABASE: hw14_db
+    volumes:
+      - mongo_data:/data/db
+      
+  mongo-express:
+    image: mongo-express:1.0.2-20
+    container_name: hw14-mongo-express
+    restart: unless-stopped
+    depends_on:
+      - mongo
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongo
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_BASICAUTH_PASSWORD: admin
+    ports:
+      - "8081:8081"
+
+volumes:
+  mongo_data:
